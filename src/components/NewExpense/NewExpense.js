@@ -3,7 +3,7 @@ import "./NewExpense.css"
 function NewExpense(props){
     const saveNewDataExpenseHandler=(enteredExpenseData)=>{
         const savedData={
-            ...props.enteredExpenseData,
+            ...enteredExpenseData,
             id:Math.random().toString()
         }
         console.log(savedData);
